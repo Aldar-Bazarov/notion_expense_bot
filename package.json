@@ -1,15 +1,10 @@
 {
-  "name": "expense_bot",
+  "name": "notion_expense_bot",
   "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "keywords": [],
-  "author": "",
+  "author": "Aldar-Bazarov",
   "license": "ISC",
   "type": "commonjs",
+  "main": "index.js",
   "dependencies": {
     "@notionhq/client": "^5.1.0",
     "dotenv": "^17.2.2",

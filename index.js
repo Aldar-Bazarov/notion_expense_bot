@@ -11,11 +11,11 @@ bot.use(session({
 }));
 
 bot.command('start', (ctx) => {
-    logger.info('Пользователь запустил бота', { 
-        userId: ctx.from.id, 
-        username: ctx.from.username 
+    logger.info('Пользователь запустил бота', {
+        userId: ctx.from.id,
+        username: ctx.from.username
     });
-    
+
     ctx.reply(
         '👋 Привет! Я бот для записи расходов в Notion.\n\n' +
         '📌 Отправьте данные в формате:\n\n' +
@@ -39,10 +39,8 @@ bot.action('cancel', handleCancel);
 
 bot.launch().then(() => {
     logger.info('🤖 Telegram-бот запущен и готов к работе!');
-    console.log('🤖 Telegram-бот запущен и готов к работе!');
 }).catch((error) => {
     logger.error('Ошибка при запуске бота', error);
-    console.error('Ошибка при запуске бота:', error);
 });
 
 process.once('SIGINT', () => {
